@@ -1,0 +1,24 @@
+
+mysql> select *from studentinfo;
++-----------+-------------+------------+------------+
+| studentId | studentname | address    | subject    |
++-----------+-------------+------------+------------+
+|       100 | Aaravi      | DELHI      | COMPUTERS  |
+|       101 | YASHPAL     | AMRISTAR   | HISTORY    |
+|       105 | GAURAV      | JAIPUR     | NULL       |
+|       110 | RAHUL       | CHANDIGARH | HISTORY    |
+|       111 | NULL        | NULL       | LITERATURE |
++-----------+-------------+------------+------------+
+5 rows in set (0.00 sec)
+
+mysql> select *from studentinfo;
++-----------+-------------+------------+------------+
+| studentId | studentname | address    | subject    |
++-----------+-------------+------------+------------+
+|       100 | Aaravi      | DELHI      | COMPUTERS  |
+|       101 | YASHPAL     | AMRISTAR   | HISTORY    |
+|       105 | GAURAV      | JAIPUR     | NULL       |
+|       110 | RAHUL       | CHANDIGARH | HISTORY    |
+|       111 | NULL        | NULL       | LITERATURE |
++-----------+-------------+------------+------------+
+5 rows in set (0.00 sec)
