@@ -1,0 +1,44 @@
+mysql> show tables;
++------------------+
+| Tables_in_mathdb |
++------------------+
+| employee         |
++------------------+
+1 row in set (0.00 sec)
+
+mysql> desc employee;
++--------+----------+------+-----+---------+-------+
+| Field  | Type     | Null | Key | Default | Extra |
++--------+----------+------+-----+---------+-------+
+| ID     | int(10)  | YES  |     | NULL    |       |
+| NAME   | char(20) | YES  |     | NULL    |       |
+| SALARY | int(10)  | YES  |     | NULL    |       |
++--------+----------+------+-----+---------+-------+
+3 rows in set (0.08 sec)
+
+mysql> insert into employee values(1,'mike',3000);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into employee values(2,'john',4000);
+Query OK, 1 row affected (0.05 sec)
+
+mysql> insert into employee values(3,'shane',3000);
+Query OK, 1 row affected (0.04 sec)
+
+mysql> insert into employee values(4,'biden',5000);
+Query OK, 1 row affected (0.05 sec)
+
+mysql> insert into employee values(5,'Bravo',7000);
+Query OK, 1 row affected (0.05 sec)
+
+mysql> select *from employee;
++------+-------+--------+
+| ID   | NAME  | SALARY |
++------+-------+--------+
+|    1 | mike  |   3000 |
+|    2 | john  |   4000 |
+|    3 | shane |   3000 |
+|    4 | biden |   5000 |
+|    5 | Bravo |   7000 |
++------+-------+--------+
+5 rows in set (0.00 sec)
