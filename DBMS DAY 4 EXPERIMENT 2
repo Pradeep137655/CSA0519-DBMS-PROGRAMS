@@ -1,0 +1,154 @@
+mysql> select *from product_mast;
+Empty set (0.00 sec)
+
+mysql> insert into product_mast values(item,com,2,10,20);
+ERROR 1054 (42S22): Unknown column 'item' in 'field list'
+mysql> SELECT *FROM PRODUCT_MAST;
+Empty set (0.00 sec)
+
+mysql>  INSERT INTO PRODUCT_MAST VALUES('ITEM1','COM1',2,10,QTY*RATE);
+Query OK, 1 row affected (0.06 sec)
+
+mysql> select *from product_mast;
++---------+---------+------+------+------+
+| PRODUCT | COMPANY | QTY  | RATE | COST |
++---------+---------+------+------+------+
+| ITEM1   | COM1    |    2 |   10 |   20 |
++---------+---------+------+------+------+
+1 row in set (0.00 sec)
+
+mysql>  INSERT INTO PRODUCT_MAST VALUES('ITEM2','COM2',3,25,QTY*RATE);
+Query OK, 1 row affected (0.04 sec)
+
+mysql>  INSERT INTO PRODUCT_MAST VALUES('ITEM3','COM3',2,30,QTY*RATE);
+Query OK, 1 row affected (0.04 sec)
+
+mysql>  INSERT INTO PRODUCT_MAST VALUES('ITEM4','COM4',5,10,QTY*RATE);
+Query OK, 1 row affected (0.05 sec)
+
+mysql>  INSERT INTO PRODUCT_MAST VALUES('ITEM5','COM2',2,20,QTY*RATE);
+Query OK, 1 row affected (0.04 sec)
+
+mysql>  INSERT INTO PRODUCT_MAST VALUES('ITEM6','COM1',3,25,QTY*RATE);
+Query OK, 1 row affected (0.04 sec)
+
+mysql>  INSERT INTO PRODUCT_MAST VALUES('ITEM7','COM1',5,30,QTY*RATE);
+Query OK, 1 row affected (0.04 sec)
+
+mysql>  INSERT INTO PRODUCT_MAST VALUES('ITEM8','COM1',3,10,QTY*RATE);
+Query OK, 1 row affected (0.05 sec)
+
+mysql>  INSERT INTO PRODUCT_MAST VALUES('ITEM9','COM2',2,25,QTY*RATE);
+Query OK, 1 row affected (0.06 sec)
+
+mysql>  INSERT INTO PRODUCT_MAST VALUES('ITEM10','COM3',4,30,QTY*RATE);
+Query OK, 1 row affected (0.05 sec)
+
+mysql> delete from product_mast where PRODUCT=ITEM3;
+ERROR 1054 (42S22): Unknown column 'ITEM3' in 'where clause'
+mysql> delete from product_mast where PRODUCT='ITEM3';
+Query OK, 1 row affected (0.08 sec)
+
+mysql> delete from product_mast where PRODUCT='ITEM4';
+Query OK, 1 row affected (0.03 sec)
+
+mysql>  INSERT INTO PRODUCT_MAST VALUES('ITEM3','COM1',2,30,QTY*RATE);
+Query OK, 1 row affected (0.04 sec)
+
+mysql>  INSERT INTO PRODUCT_MAST VALUES('ITEM4','COM3',2,30,QTY*RATE);
+Query OK, 1 row affected (0.04 sec)
+
+mysql> select *from product_mast;
++---------+---------+------+------+------+
+| PRODUCT | COMPANY | QTY  | RATE | COST |
++---------+---------+------+------+------+
+| ITEM1   | COM1    |    2 |   10 |   20 |
+| ITEM2   | COM2    |    3 |   25 |   75 |
+| ITEM5   | COM2    |    2 |   20 |   40 |
+| ITEM6   | COM1    |    3 |   25 |   75 |
+| ITEM7   | COM1    |    5 |   30 |  150 |
+| ITEM8   | COM1    |    3 |   10 |   30 |
+| ITEM9   | COM2    |    2 |   25 |   50 |
+| ITEM10  | COM3    |    4 |   30 |  120 |
+| ITEM3   | COM1    |    2 |   30 |   60 |
+| ITEM4   | COM3    |    2 |   30 |   60 |
++---------+---------+------+------+------+
+10 rows in set (0.00 sec)
+
+mysql> SELECT COUNT(*) FROM PRODUCT_MAST;
++----------+
+| COUNT(*) |
++----------+
+|       10 |
++----------+
+1 row in set (0.07 sec)
+
+mysql> SELECT COUNT(*) FROM PRODUCT_MAST WHERE COST>=20;
++----------+
+| COUNT(*) |
++----------+
+|       10 |
++----------+
+1 row in set (0.03 sec)
+
+mysql> SELECT COUNT(*) FROM PRODUCT_MAST WHERE RATE>=20;
++----------+
+| COUNT(*) |
++----------+
+|        8 |
++----------+
+1 row in set (0.00 sec)
+
+mysql> delete from product_mast where PRODUCT='ITEM4';
+Query OK, 1 row affected (0.04 sec)
+
+mysql>  INSERT INTO PRODUCT_MAST VALUES('ITEM4','COM3',5,10,QTY*RATE);
+Query OK, 1 row affected (0.04 sec)
+
+mysql> SELECT COUNT(*) FROM PRODUCT_MAST WHERE RATE>=20;
++----------+
+| COUNT(*) |
++----------+
+|        7 |
++----------+
+1 row in set (0.00 sec)
+
+mysql> SELECT COUNT(DISTINCT COMPANY) FROM PRODUCT_MAST;
++-------------------------+
+| COUNT(DISTINCT COMPANY) |
++-------------------------+
+|                       3 |
++-------------------------+
+1 row in set (0.00 sec)
+
+mysql> SELECT SUM(COST) FROM PRODUCT_MAST;
++-----------+
+| SUM(COST) |
++-----------+
+|       670 |
++-----------+
+1 row in set (0.02 sec)
+
+mysql> SELECT AVG(COST) FROM PRODUCT_MAST;
++-----------+
+| AVG(COST) |
++-----------+
+|   67.0000 |
++-----------+
+1 row in set (0.00 sec)
+
+mysql> SELECT MIN(RATE) FROM PRODUCT_MAST;
++-----------+
+| MIN(RATE) |
++-----------+
+|        10 |
++-----------+
+1 row in set (0.00 sec)
+
+mysql> SELECT MAX(RATE) FROM PRODUCT_MAST;
++-----------+
+| MAX(RATE) |
++-----------+
+|        30 |
++-----------+
+1 row in set (0.00 sec)
