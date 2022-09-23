@@ -96,26 +96,26 @@
 [DATA BASE CONNECTIVITY](https://github.com/Pradeep137655/CSA0519-Data-Base-Management-System/tree/main)
 <img width="653" alt="image" src="https://user-images.githubusercontent.com/112794125/191808558-ffd5f7b6-7665-4de2-9880-a630480ebe3b.png">
 ## Experiment20
-[Case Scenario Basic SQL](https://github.com/Apitha2404/CSA0519-Data-Base-Management-System)
+[Case Scenario Basic SQL](https://github.com/Pradeep137655/CSA0519-Data-Base-Management-System)
 <img width="955" alt="image" src="https://user-images.githubusercontent.com/112794125/191808858-5e36989f-7dd7-45d5-8c5c-7d78197c0ac3.png">
 ## Experiment21
-[CREATE TABLES](https://github.com/Apitha2404/CSA0519-Data-Base-Management-System/tree/main)
+[CREATE TABLES](https://github.com/Pradeep137655/CSA0519-Data-Base-Management-System/tree/main)
 <img width="479" alt="image" src="https://user-images.githubusercontent.com/112794125/191887550-e9d2af65-1038-4ee2-bfba-20e43d8d6098.png">
 <img width="499" alt="image" src="https://user-images.githubusercontent.com/112794125/191887647-e5762ae7-2a81-4d3a-bd9b-da3108d4b932.png">
 <img width="398" alt="image" src="https://user-images.githubusercontent.com/112794125/191887667-f62cd4ac-fea3-43a7-b62c-6cdd4fb1e26a.png">
 ## eXPERIMENT22
-[USING SAME TABLE](https://github.com/Apitha2404/CSA0519-Data-Base-Management-System)
+[USING SAME TABLE](https://github.com/Pradeep137655/CSA0519-Data-Base-Management-System)
 <img width="856" alt="image" src="https://user-images.githubusercontent.com/112794125/191887863-5ae81462-702c-49b2-b5ce-aa4115ace5d4.png">
 <img width="624" alt="image" src="https://user-images.githubusercontent.com/112794125/191887941-0645f03b-97fc-4c5f-986a-e5715dfd1c0f.png">
 <img width="605" alt="image" src="https://user-images.githubusercontent.com/112794125/191887975-bf001fae-9c78-46c8-a03b-bbe985f6df04.png">
 ## Experiment23
-[HOSPITAL MANAGEMENT](https://github.com/Apitha2404/CSA0519-Data-Base-Management-System/tree/main)
+[HOSPITAL MANAGEMENT](https://github.com/Pradeep137655/CSA0519-Data-Base-Management-System/tree/main)
 <img width="756" alt="image" src="https://user-images.githubusercontent.com/112794125/191894699-1acf0e5a-f5fb-4049-80e7-f53437473fb4.png">
 ## Experiment24
-[CAR RENTAL](https://github.com/Apitha2404/CSA0519-Data-Base-Management-System)
+[CAR RENTAL](https://github.com/Pradeep137655/CSA0519-Data-Base-Management-System)
 <img width="562" alt="image" src="https://user-images.githubusercontent.com/112794125/191894881-c91a3737-d653-411a-9020-ddec994c310a.png">
 ## Experiment25
-[STUDENT MONITORING ](https://github.com/Apitha2404/CSA0519-Data-Base-Management-System)
+[STUDENT MONITORING ](https://github.com/Pradeep137655/CSA0519-Data-Base-Management-System)
 <img width="296" alt="image" src="https://user-images.githubusercontent.com/112794125/191895091-ff683a7f-6915-43ad-a9e6-b3570ac4455f.png">
 <img width="302" alt="image" src="https://user-images.githubusercontent.com/112794125/191895119-e7fc17e5-6e11-4e72-944a-5199f5c8b376.png">
 <img width="280" alt="image" src="https://user-images.githubusercontent.com/112794125/191895198-1815544e-2c43-43e7-8636-27a816ba2de7.png">
